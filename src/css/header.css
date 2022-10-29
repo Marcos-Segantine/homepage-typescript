@@ -1,0 +1,103 @@
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: #eee;
+    position: relative;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 2rem 0;
+}
+
+li {
+    font-size: 1.1rem;
+}
+
+.title-home {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.title-home h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.title-home span {
+    font-size: 1.3rem;
+}
+
+.carrosel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    position: absolute;
+    left: 0;  
+    bottom: 10%;
+}
+
+.carrosel ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carrosel ul span{
+    background-color: black;
+    width: 10px;    
+    height: 10px;
+    border-radius: 40px;    
+}
+
+.carrosel ul .selected {
+    background-color: transparent;
+    border: solid 1px;
+}
+
+.carrosel .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 60%;
+    max-width: 600px;
+    height: max-content;
+}
+
+.carrosel .content h4 {
+    width: 100%;
+    font-size: 1.4rem;
+    height: max-content;
+}
+
+.carrosel .content p {
+    width: 100%;
+    max-width: 150px;
+}
+
+@media(min-width: 767px) {
+    .title-home h1 {
+        font-size: 7rem;
+    }
+
+    .carrosel .content h4 {
+        font-size: 2rem;
+    }
+    
+
+    .carrosel .content p {
+        width: 45%;
+        max-width: 300px;
+        font-size: 1.2rem;
+    }
+}
