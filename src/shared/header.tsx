@@ -1,5 +1,7 @@
 import "../css/header.css";
 
+import { Carrosel } from "../components/carrosel";
+
 export const Header = () => {
   return (
     <header>
@@ -22,23 +24,7 @@ export const Header = () => {
         <span>Lading Page Design Template</span>
       </div>
 
-      <div className="carrosel">
-        <nav>
-          <ul>
-            <span></span>
-            <span className="selected"></span>
-            <span></span>
-            <span></span>
-          </ul>
-        </nav>
-
-        <div className="content">
-          <h4>Lorem</h4>
-
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-      </div>
+    <Carrosel />
     </header>
   );
 };

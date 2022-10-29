@@ -36,68 +36,8 @@ li {
     font-size: 1.3rem;
 }
 
-.carrosel {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
-    position: absolute;
-    left: 0;  
-    bottom: 10%;
-}
-
-.carrosel ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.carrosel ul span{
-    background-color: black;
-    width: 10px;    
-    height: 10px;
-    border-radius: 40px;    
-}
-
-.carrosel ul .selected {
-    background-color: transparent;
-    border: solid 1px;
-}
-
-.carrosel .content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 60%;
-    max-width: 600px;
-    height: max-content;
-}
-
-.carrosel .content h4 {
-    width: 100%;
-    font-size: 1.4rem;
-    height: max-content;
-}
-
-.carrosel .content p {
-    width: 100%;
-    max-width: 150px;
-}
-
 @media(min-width: 767px) {
     .title-home h1 {
         font-size: 7rem;
-    }
-
-    .carrosel .content h4 {
-        font-size: 2rem;
-    }
-    
-
-    .carrosel .content p {
-        width: 45%;
-        max-width: 300px;
-        font-size: 1.2rem;
     }
 }
