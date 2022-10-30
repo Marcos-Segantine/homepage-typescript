@@ -1,0 +1,111 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 100%;
+    text-align: center;
+}
+
+.content-about {
+    width: 100%;
+    position: relative;
+    height: 40rem;
+}
+
+.content-about .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-about .img-bigger {
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    background-color: #eee;
+    width: 80%;
+    height: 20rem;
+}
+
+.content-about .img-medium {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: 500;
+    background-color: rgb(226, 226, 226);
+    width: 65%;
+    height: 15rem;
+}
+
+.content-about .img-small {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    z-index: 1000;
+    background-color: rgb(144, 136, 136);
+    width: 55%;
+    height: 10rem;
+}
+
+.content-about div:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 100%;
+    gap: 20px;
+    display: none;
+}
+
+.content-about div:last-child p {
+    font-size: .8rem;
+}
+
+@media(min-width: 767px) {
+    .p-about {
+        max-width: 50%;
+    }
+
+    .content-about {
+        height: 50rem;
+        width: 100%;
+    }
+
+    .content-about .img-bigger {
+        top: 10px;
+        right: 10%;
+        width: 50%;
+        height: 30rem;
+    }
+
+    .content-about .img-medium {
+        top: 20%;
+        left: 10%;
+        width: 35%;
+        height: 25rem;
+    }
+
+    .content-about .img-small {
+        bottom: 15%;
+        left: 25%;
+        width: 35%;
+        height: 15rem;
+    }
+
+    .content-about div:last-child {
+        bottom: 20%;
+        right: 10%;
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+    }
+}
