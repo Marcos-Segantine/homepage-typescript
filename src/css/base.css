@@ -5,6 +5,12 @@ body {
     box-sizing: border-box;
 }
 
+:root {
+    --dark-gray: #4A5567;
+    --gray: #eee;
+    --blue: #4979A9;
+}
+
 li {
     list-style: none;
 }

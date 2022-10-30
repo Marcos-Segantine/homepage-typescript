@@ -26,12 +26,12 @@ export const Carrosel = () => {
   );
 };
 
-const Content = (props: IContent) => {
+const Content = ({ title, firstParagraf, secondParagraf }: IContent) => {
   return (
     <div className="content">
-      <h4>{props.firstParagraf}</h4>
-      <p>{props.firstParagraf}</p>
-      <p>{props.secondParagraf}</p>
+      <h4>{title}</h4>
+      <p>{firstParagraf}</p>
+      <p>{secondParagraf}</p>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import "../css/header.css";
 
-import { Carrosel } from "../components/carrosel";
+import { Carrosel } from "../components/Carrosel";
 
 export const Header = () => {
   return (
